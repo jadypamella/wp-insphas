@@ -4,27 +4,34 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package Jady_-_Portfólio
+ * @package WordPress
+ * @subpackage Insphas_Twenty_Seventeen
+ * @since 1.0
+ * @version 1.0
  */
 
-get_header();
-?>
+get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
+<div class="wrap">
 
+	<header class="page-header">
 		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<h1 class="page-title">
-					<?php
-					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'jady-portfolio' ), '<span>' . get_search_query() . '</span>' );
-					?>
-				</h1>
-			</header><!-- .page-header -->
-
+			<h1 class="page-title">
 			<?php
+			/* translators: Search query. */
+			printf( __( 'Search Results for: %s', 'twentyseventeen' ), '<span>' . get_search_query() . '</span>' );
+			?>
+			</h1>
+		<?php else : ?>
+			<h1 class="page-title"><?php _e( 'Nothing Found', 'twentyseventeen' ); ?></h1>
+		<?php endif; ?>
+	</header><!-- .page-header -->
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		<?php
+		if ( have_posts() ) :
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
@@ -34,22 +41,32 @@ get_header();
 				 * If you want to overload this in a child theme then include a file
 				 * called content-search.php and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', 'search' );
+				get_template_part( 'template-parts/post/content', 'excerpt' );
 
-			endwhile;
+			endwhile; // End of the loop.
 
-			the_posts_navigation();
+			the_posts_pagination(
+				array(
+					'prev_text'          => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
+					'next_text'          => '<span class="screen-reader-text">' . __( 'Next page', 'twentyseventeen' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
+					'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyseventeen' ) . ' </span>',
+				)
+			);
 
 		else :
+			?>
 
-			get_template_part( 'template-parts/content', 'none' );
+			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentyseventeen' ); ?></p>
+			<?php
+				get_search_form();
 
 		endif;
 		?>
 
 		</main><!-- #main -->
-	</section><!-- #primary -->
+	</div><!-- #primary -->
+	<?php get_sidebar(); ?>
+</div><!-- .wrap -->
 
 <?php
-get_sidebar();
 get_footer();

@@ -1,0 +1,41 @@
+::selection{text-shadow:none;color:#FFF;background-color:#00a8cc;}
+::-moz-selection{text-shadow:none;color:#FFF;background:#00a8cc;}
+::-webkit-selection{text-shadow:none;color:#FFF;background:#00a8cc;}
+
+.site-blocks-cover, .site-blocks-cover > .container > .row {
+    min-height: 600px;
+    height: calc(140vh);
+}
+
+.heading-wrap h2 {
+  text-transform: none !important;
+}
+
+.home-header {
+}
+
+.home-header h1 {
+  padding-top: 20px !important;
+}
+
+.icon-instagram, .icon-facebook, .icon-phone, .icon-whatsapp, .icon-map-marker {
+  font-size: 1.2em;
+}
+
+.site-footer {
+    padding: 2em 0;
+    background: #333333;
+}
+
+.social-itens a {
+  display: block;
+  margin-bottom: 10px !important;
+}
+
+#logo-header {
+  height: 300px;
+}
+
+#logo-footer {
+  height: 300px;
+}
