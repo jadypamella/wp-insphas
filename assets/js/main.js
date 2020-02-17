@@ -10,9 +10,9 @@ jQuery(document).ready(function($) {
 
 	// loader
 	$(".loader").delay(1000).fadeOut("slow");
-  $("#overlayer").delay(1000).fadeOut("slow");	
+  $("#overlayer").delay(1000).fadeOut("slow");
 
-	
+
 	var siteMenuClone = function() {
 
 		$('.js-clone-nav').each(function() {
@@ -22,11 +22,11 @@ jQuery(document).ready(function($) {
 
 
 		setTimeout(function() {
-			
+
 			var counter = 0;
       $('.site-mobile-menu .has-children').each(function(){
         var $this = $(this);
-        
+
         $this.prepend('<span class="arrow-collapse collapsed">');
 
         $this.find('.arrow-collapse').attr({
@@ -52,8 +52,8 @@ jQuery(document).ready(function($) {
       } else {
         $this.addClass('active');
       }
-      e.preventDefault();  
-      
+      e.preventDefault();
+
     });
 
 		$(window).resize(function() {
@@ -78,7 +78,7 @@ jQuery(document).ready(function($) {
 				$('body').addClass('offcanvas-menu');
 				$this.addClass('active');
 			}
-		}) 
+		})
 
 		// click outisde offcanvas
 		$(document).mouseup(function(e) {
@@ -89,7 +89,7 @@ jQuery(document).ready(function($) {
 				}
 	    }
 		});
-	}; 
+	};
 	siteMenuClone();
 
 
@@ -253,7 +253,7 @@ jQuery(document).ready(function($) {
 			    + '<span class="countdown-block"><span class="label">%S</span> sec</span>'));
 			});
 		}
-				
+
 	};
 	siteCountDown();
 
@@ -276,7 +276,7 @@ jQuery(document).ready(function($) {
 	// navigation
   var OnePageNavigation = function() {
     var navToggler = $('.site-menu-toggle');
-   	$("body").on("click", ".main-menu li a[href^='#'], .smoothscroll[href^='#'], .site-mobile-menu .site-nav-wrap li a[href^='#']", function(e) {
+   	$("body").on("click", ".main-menu li a[href^='#'], .nav-button a[href^='#'], .smoothscroll[href^='#'], .site-mobile-menu .site-nav-wrap li a[href^='#']", function(e) {
       e.preventDefault();
 
       var hash = this.hash;
@@ -303,7 +303,7 @@ jQuery(document).ready(function($) {
   			$('.js-sticky-header').removeClass('shrink');
   		}
 
-  	}) 
+  	})
 
   };
   siteScroll();
@@ -320,7 +320,7 @@ jQuery(document).ready(function($) {
 	      columnWidth: '.col-sm-3'
 	    });
 	  });
-	  
+
 	  $container.isotope({ filter: '*' });
 
 	    // filter items on button click

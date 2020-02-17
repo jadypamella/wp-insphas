@@ -102,7 +102,7 @@
               <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/logo-header.png" alt="Insphas" id="logo-header" title="Insphas">
             </p>
             <h1 class="font-weight-bold">Instituto<br/>Phallas Sapienthia</h1>
-            <p class="sub-text mb-4 d-block">Melhorando a qualidade de vida da comunidade da<br/>Expansão do Setor O!</p>
+            <p class="sub-text mb-4 d-block">Voluntários de bom coração melhorando a qualidade de vida da comunidade da Expansão do Setor O</p>
 
           </div>
         </div>

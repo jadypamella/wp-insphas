@@ -20,8 +20,9 @@ get_header(); ?>
           <div class="col-md-5 mr-auto">
             <div class="text-left heading-wrap mb-5">
               <h2 class="mt-0 mb-5">Sobre</h2>
-              <p>O Instituto Phallas Sapienthia (Insphas) - Vida Plena é uma instituição sem fins lucrativos fundada no ano de 2018, que atua na Ceilândia Norte, na região do Distrito Federal. A instituição nasceu a partir da mobilização de um grupo de moradores e tem como objetivo trazer melhorias para a comunidade em várias dimensões sociais, tais como, educação, empreendedorismo, saúde, lazer, esportes e bem-estar e demais atividades que possam melhorar a vida das pessoas da região.</p>
-              <p>É uma parceria de dois amigos de longa data tentando retribuir para o mundo um pouco das oportunidades que tiveram.</p>
+              <p>O Instituto Phallas Sapienthia (Insphas) - Vida Plena é uma instituição sem fins lucrativos fundada em 15 de dezembro de 2018, que atua na Ceilândia Norte, na região do Distrito Federal.
+              A instituição objetiva trazer melhorias para a comunidade em várias dimensões sociais, tais como, educação, empreendedorismo, saúde, lazer e bem-estar.</p>
+              <p>A iniciativa começou com uma parceria de dois amigos de longa data tentando retribuir para o mundo um pouco das oportunidades que tiveram.</p>
               <p>Por falar nisso, você já conhece a <a href="https://www.facebook.com/maria.olimpia.142" title="Facebook - Maria Olímpia" target="_blank">dona Olímpia</a> e o <a href="https://www.facebook.com/josegadelhaloureiro.gadelha" title="Facebook - José Gadelha" target="_blank">professor Gadelha</a>?</p>
             </div>
           </div>
@@ -35,10 +36,10 @@ get_header(); ?>
 
     <section class="site-section" id="schedule-section">
         <div class="container">
-          <div class="row mb-5">
-            <div class="col-md-7 text-left heading-wrap mb-5">
+          <div class="row mb-3">
+            <div class="col-md-8 text-left heading-wrap mb-5">
               <h2 class="mt-0">Atividades Oferecidas</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              <p>Todas as atividades do Insphas são oferecidas por voluntários conforme disponibilidade de agenda deles e, quando não há vagas disponíveis, é criada uma lista de espera. Essas são as principais atividades oferecidas no momento:</p>
             </div>
 
           </div>
@@ -51,13 +52,9 @@ get_header(); ?>
               <div class="sched d-block d-lg-flex">
                 <div class="bg-image order-2" style="background-image: url('<?php echo get_stylesheet_directory_uri() ?>/assets/images/atividade_1.jpg');"></div>
                 <div class="text order-1">
-                  <h3>Yinyasa</h3>
-                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts...</p>
-                  <p class="sched-time">
-                    <span><span class="fa fa-clock-o"></span> 5:30 PM</span> <br>
-                    <span><span class="fa fa-calendar"></span> April 22, 2019</span> <br>
-                  </p>
-                  <p><a href="#" class="btn btn-primary btn-sm">Join from $15</a></p>
+                  <h3>Atendimento Psicológico</h3>
+                  <p>Suporte psicológico por meio de terapia breve oferecida a crianças, adolescentes, adultos e idosos.</p>
+                  <p class="text-xs-center nav-button"><a href="#contact-footer" title="Fale com a gente" class="btn btn-primary btn-sm">Quero me Inscrever</a></p>
 
                 </div>
 
@@ -66,13 +63,9 @@ get_header(); ?>
               <div class="sched d-block d-lg-flex">
                 <div class="bg-image" style="background-image: url('<?php echo get_stylesheet_directory_uri() ?>/assets/images/atividade_2.jpg');"></div>
                 <div class="text">
-                  <h3>Chandra Vinyasa</h3>
-                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts...</p>
-                  <p class="sched-time">
-                    <span><span class="fa fa-clock-o"></span> 5:30 PM</span> <br>
-                    <span><span class="fa fa-calendar"></span> April 22, 2019</span> <br>
-                  </p>
-                  <p><a href="#" class="btn btn-primary btn-sm">Join from $15</a></p>
+                  <h3>Acupuntura</h3>
+                  <p>Tratamento e prevenção de várias de diversas patologias fundamentados nos moldes da medicina tradicional chinesa.</p>
+                  <p class="text-xs-center nav-button"><a href="#contact-footer" title="Fale com a gente" class="btn btn-primary btn-sm">Quero me Inscrever</a></p>
 
                 </div>
 
@@ -84,13 +77,9 @@ get_header(); ?>
               <div class="sched d-block d-lg-flex">
                 <div class="bg-image order-2" style="background-image: url('<?php echo get_stylesheet_directory_uri() ?>/assets/images/atividade_3.jpg');"></div>
                 <div class="text order-1">
-                  <h3>Surya Vinyasa</h3>
-                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts...</p>
-                  <p class="sched-time">
-                    <span><span class="fa fa-clock-o"></span> 5:30 PM</span> <br>
-                    <span><span class="fa fa-calendar"></span> April 22, 2019</span> <br>
-                  </p>
-                  <p><a href="#" class="btn btn-primary btn-sm">Join from $15</a></p>
+                  <h3>Atendimento Fitoterápico</h3>
+                  <p>Consulta especializada e tratamento à base de medicamentos fitoterápicos e homeopatia em geral.</p>
+                  <p class="text-xs-center nav-button"><a href="#contact-footer" title="Fale com a gente" class="btn btn-primary btn-sm">Quero me Inscrever</a></p>
 
                 </div>
 
@@ -99,13 +88,9 @@ get_header(); ?>
               <div class="sched d-block d-lg-flex">
                 <div class="bg-image" style="background-image: url('<?php echo get_stylesheet_directory_uri() ?>/assets/images/atividade_4.jpg');"></div>
                 <div class="text">
-                  <h3>Ashtanga Foundations</h3>
-                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts...</p>
-                  <p class="sched-time">
-                    <span><span class="fa fa-clock-o"></span> 5:30 PM</span> <br>
-                    <span><span class="fa fa-calendar"></span> April 22, 2019</span> <br>
-                  </p>
-                  <p><a href="#" class="btn btn-primary btn-sm">Join from $15</a></p>
+                  <h3>Alfabetização de Idosos e Reforço Escolar</h3>
+                  <p>Iniciação do processo de ensino-aprendizado de escrita e leitura e apoio de crianças e adolescentes no desenvolvimento escolar.</p>
+                  <p class="text-xs-center nav-button"><a href="#contact-footer" title="Fale com a gente" class="btn btn-primary btn-sm">Quero me Inscrever</a></p>
 
                 </div>
 
