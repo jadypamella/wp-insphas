@@ -15,7 +15,7 @@
 
 	</div><!-- .site-wrap -->
 
-	<section class="site-section element-animate" id="contact-section">
+	<section class="site-section element-animate" id="contato">
 		<div class="mb-5">
 			<div class="container-fluid">
 				<div class="row">

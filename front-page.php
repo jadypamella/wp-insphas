@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-    <section class="site-section" id="about-section">
+    <section class="site-section" id="sobre">
       <div class="container">
         <div class="row">
           <div class="col-md-5 mr-auto">
@@ -34,7 +34,7 @@ get_header(); ?>
       </div>
     </section>
 
-    <section class="site-section" id="schedule-section">
+    <section class="site-section" id="atividades">
         <div class="container">
           <div class="row mb-3">
             <div class="col-md-8 text-left heading-wrap mb-5">

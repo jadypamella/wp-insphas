@@ -23,13 +23,6 @@
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-  <div id="overlayer"></div>
-  <div class="loader">
-    <div class="spinner-border text-primary" role="status">
-      <span class="sr-only">Carregando...</span>
-    </div>
-  </div>
-
   <div class="site-wrap">
 
     <div class="site-mobile-menu site-navbar-target">
@@ -81,10 +74,10 @@
                   <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
 
                   <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
-                    <li><a href="#home-section" class="nav-link">Início</a></li>
-                    <li><a href="#about-section" class="nav-link">Sobre</a></li>
-                    <li><a href="#schedule-section" class="nav-link">Atividades</a></li>
-                    <li><a href="#contact-section" class="nav-link">Contato</a></li>
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#atividades" class="nav-link">Atividades</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
                   </ul>
                 </div>
               </nav>
@@ -94,7 +87,7 @@
       </div>
     </div>
 
-    <div class="site-blocks-cover overlay" style="background-image: url(<?php echo get_stylesheet_directory_uri() ?>/assets/images/header-bg.jpg);" data-aos="fade" data-stellar-background-ratio="0.5"id="home-section">
+    <div class="site-blocks-cover overlay" style="background-image: url(<?php echo get_stylesheet_directory_uri() ?>/assets/images/header-bg-min.jpg);" data-aos="fade" data-stellar-background-ratio="0.5"id="inicio">
       <div class="container">
         <div class="row align-items-center text-center justify-content-center">
           <div class="col-md-8 home-header">

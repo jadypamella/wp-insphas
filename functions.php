@@ -654,31 +654,18 @@ function add_theme_scripts() {
 	wp_enqueue_style( 'css-quicksand', 'https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 	wp_enqueue_style( 'css-icomoon', get_template_directory_uri() . '/assets/fonts/icomoon/style.css');
 	wp_enqueue_style( 'css-bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
-	wp_enqueue_style( 'css-magnific', get_template_directory_uri() . '/assets/css/magnific-popup.css');
-	wp_enqueue_style( 'css-jquery-ui', get_template_directory_uri() . '/assets/css/jquery-ui.css');
-	wp_enqueue_style( 'css-owl-carousel', get_template_directory_uri() . '/assets/css/owl.carousel.min.css');
-	wp_enqueue_style( 'css-owl.theme', get_template_directory_uri() . '/assets/css/owl.theme.default.min.css');
-	wp_enqueue_style( 'css-bootstrap-datepicker', get_template_directory_uri() . '/assets/css/bootstrap-datepicker.css"');
-	wp_enqueue_style( 'css-flaticon', get_template_directory_uri() . '/assets/fonts/flaticon/font/flaticon.css');
 	wp_enqueue_style( 'css-aos', get_template_directory_uri() . '/assets/css/aos.css');
-	wp_enqueue_style( 'css-jquery.fancybox', get_template_directory_uri() . '/assets/css/jquery.fancybox.min.css');
 	wp_enqueue_style( 'css-style-theme', get_template_directory_uri() . '/assets/css/style.css');
 	wp_enqueue_style( 'css-insphas', get_template_directory_uri() . '/assets/css/insphas.css');-
 
 	/* JS */
 	wp_enqueue_script( 'js-jquery', get_template_directory_uri() . '/assets/js/jquery-3.3.1.min.js', array ( 'jquery' ), 1.1, true);
-	wp_enqueue_script( 'js-jquery-ui', get_template_directory_uri() . '/assets/js/jquery-ui.js', array ( 'jquery' ), 1.1, true);
-	wp_enqueue_script( 'js-popper', get_template_directory_uri() . '/assets/js/popper.min.js', array ( 'jquery' ), 1.1, true);
 	wp_enqueue_script( 'js-bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array ( 'jquery' ), 1.1, true);
 	wp_enqueue_script( 'js-owl', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array ( 'jquery' ), 1.1, true);
-	wp_enqueue_script( 'js-countdown', get_template_directory_uri() . '/assets/js/jquery.countdown.min.js', array ( 'jquery' ), 1.1, true);
-	wp_enqueue_script( 'js-magnific', get_template_directory_uri() . '/assets/js/jquery.magnific-popup.min.js', array ( 'jquery' ), 1.1, true);
-	wp_enqueue_script( 'js-datepicker', get_template_directory_uri() . '/assets/js/bootstrap-datepicker.min.js', array ( 'jquery' ), 1.1, true);
 	wp_enqueue_script( 'js-aos', get_template_directory_uri() . '/assets/js/aos.js', array ( 'jquery' ), 1.1, true);
 	wp_enqueue_script( 'js-sticky', get_template_directory_uri() . '/assets/js/jquery.sticky.js', array ( 'jquery' ), 1.1, true);
+	wp_enqueue_script( 'js-stellar', get_template_directory_uri() . '/assets/js/jquery.stellar.js', array ( 'jquery' ), 1.1, true);
 	wp_enqueue_script( 'js-easing', get_template_directory_uri() . '/assets/js/jquery.easing.1.3.js', array ( 'jquery' ), 1.1, true);
-	wp_enqueue_script( 'js-isotope', get_template_directory_uri() . '/assets/js/isotope.pkgd.min.js', array ( 'jquery' ), 1.1, true);
-	wp_enqueue_script( 'js-fancybox', get_template_directory_uri() . '/assets/js/jquery.fancybox.min.js', array ( 'jquery' ), 1.1, true);
 	wp_enqueue_script( 'js-main', get_template_directory_uri() . '/assets/js/main.js', array ( 'jquery' ), 1.1, true);
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
@@ -739,3 +726,22 @@ add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 
 			return $contacts[$value];
   }
+
+
+ /**
+  * Jady: Google Analytics
+  * Carrega o ID do Google Analytics
+  */
+	add_action('wp_head','get_google_analytics', 20);function get_google_analytics() {
+	?>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159378860-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-159378860-1');
+	</script>
+	<?php
+	}

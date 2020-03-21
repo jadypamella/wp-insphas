@@ -8,11 +8,6 @@ jQuery(document).ready(function($) {
 
 	"use strict";
 
-	// loader
-	$(".loader").delay(1000).fadeOut("slow");
-  $("#overlayer").delay(1000).fadeOut("slow");
-
-
 	var siteMenuClone = function() {
 
 		$('.js-clone-nav').each(function() {
@@ -91,39 +86,6 @@ jQuery(document).ready(function($) {
 		});
 	};
 	siteMenuClone();
-
-
-	var sitePlusMinus = function() {
-		$('.js-btn-minus').on('click', function(e){
-			e.preventDefault();
-			if ( $(this).closest('.input-group').find('.form-control').val() != 0  ) {
-				$(this).closest('.input-group').find('.form-control').val(parseInt($(this).closest('.input-group').find('.form-control').val()) - 1);
-			} else {
-				$(this).closest('.input-group').find('.form-control').val(parseInt(0));
-			}
-		});
-		$('.js-btn-plus').on('click', function(e){
-			e.preventDefault();
-			$(this).closest('.input-group').find('.form-control').val(parseInt($(this).closest('.input-group').find('.form-control').val()) + 1);
-		});
-	};
-	// sitePlusMinus();
-
-
-	var siteSliderRange = function() {
-    $( "#slider-range" ).slider({
-      range: true,
-      min: 0,
-      max: 500,
-      values: [ 75, 300 ],
-      slide: function( event, ui ) {
-        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-      }
-    });
-    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-	};
-	// siteSliderRange();
 
 
 
@@ -307,40 +269,5 @@ jQuery(document).ready(function($) {
 
   };
   siteScroll();
-
-  var siteIstotope = function() {
-  	/* activate jquery isotope */
-	  var $container = $('#posts').isotope({
-	    itemSelector : '.item',
-	    isFitWidth: true
-	  });
-
-	  $(window).resize(function(){
-	    $container.isotope({
-	      columnWidth: '.col-sm-3'
-	    });
-	  });
-
-	  $container.isotope({ filter: '*' });
-
-	    // filter items on button click
-	  $('#filters').on( 'click', 'button', function(e) {
-	  	e.preventDefault();
-	    var filterValue = $(this).attr('data-filter');
-	    $container.isotope({ filter: filterValue });
-	    $('#filters button').removeClass('active');
-	    $(this).addClass('active');
-	  });
-  }
-
-  siteIstotope();
-
-  $('.fancybox').on('click', function() {
-	  var visibleLinks = $('.fancybox');
-
-	  $.fancybox.open( visibleLinks, {}, visibleLinks.index( this ) );
-
-	  return false;
-	});
 
 });
